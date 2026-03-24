@@ -146,15 +146,21 @@ html {
         transition: right 0.4s ease-in-out;
         z-index: 1000;
             }
+            .logo{
+                display: flex;
+                flex-direction: column;
+            }
 
             .nav-menu.active {
                 right: 0;
+                padding-top: 52px;
             }
 
 
             .nav-menu ul {
                 flex-direction: column;
                 gap: 2rem;
+                
             }
 
             .nav-menu a {
@@ -175,9 +181,11 @@ html {
 
             .hamburger {
                 display: flex;
-                z-index: 1001;
+                z-index: 2;
+                
 
             }
+            
 
             .overlay {
                 position: fixed;
