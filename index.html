@@ -25,8 +25,82 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+/* Logo Image Styles */
+.logo {
+    display: flex;
+    align-items: center;
+    height: 50px;           /* Adjust based on your logo height */
+}
 
+.logo-img {
+    height: 100%;           /* Makes logo scale with container */
+    width: auto;
+    max-height: 50px;       /* Safety limit */
+    object-fit: contain;    /* Keeps logo proportions */
+    transition: all 0.3s ease;
+}
 
+.logo-img:hover {
+    transform: scale(1.05);
+}
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;                    /* Space between image and text */
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Logo Image */
+.logo-img {
+    height: 48px;                 /* Adjust this size as needed */
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;               /* Prevents image from shrinking */
+}
+
+/* Logo Text */
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    line-height: 1.1;
+}
+
+.logo-text span {
+    background: linear-gradient(to bottom, #ffd900 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* Hover Effect */
+.logo-container:hover .logo-img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 40px;             /* Smaller on mobile */
+    }
+    
+    .logo-text {
+        font-size: 1.35rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logo-container {
+        gap: 8px;
+    }
+}
 
 /* Optional: Add a subtle border on very large screens */
 @media (min-width: 1401px) {
@@ -71,7 +145,7 @@ html, body {
         }
 
         .logo span {
-            background: linear-gradient(to bottom, #ffd900 0%, #ffffff 100%);
+            background: linear-gradient(to bottom, #F6C451 0%, #ffffff 100%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -100,7 +174,7 @@ html, body {
         }
 
         .nav-menu a:hover {
-            color: #ffd900;
+            color: #F6C451;
         }
 
 
@@ -112,7 +186,7 @@ html, body {
         }
 
         .btn-cta {
-            background: #ffd900;
+            background: #F6C451;
             color: #0f172a;
             padding: 0.6rem 1.5rem;
             border-radius: 8px;
@@ -139,14 +213,14 @@ html, body {
         .hamburger div {
             width: 25px;
             height: 3px;
-            background-color: #ffd900;
+            background-color: #F6C451;
             border-radius: 2px;
         }
 
         .close-btn {
             display: none;
             font-size: 2.5rem;
-            color: #ffd900;
+            color: #F6C451;
             align-self: flex-end;
             cursor: pointer;
             margin-bottom: 2rem;
@@ -169,7 +243,13 @@ html, body {
                 transition: right 0.4s ease-in-out;
                 z-index: 1000;
             }
-
+            .logo {
+        height: 42px;
+    }
+    
+    .logo-img {
+        max-height: 42px;
+    }
             .logo {
                 display: flex;
                 flex-direction: column;
@@ -200,7 +280,7 @@ html, body {
                 right: 20px;
                 font-size: 2.5rem;
                 line-height: 1;
-                color: #ffd900;
+                color: #F6C451;
             }
 
             .hamburger {
@@ -345,7 +425,7 @@ html, body {
         }
 
         :root {
-            --brand-orange: #ffd900;
+            --brand-orange: #F6C451;
         }
 
 
@@ -556,18 +636,18 @@ html, body {
 
         .price-card:hover {
             transform: translateY(-10px);
-            border-color: #ffd900;
+            border-color: #F6C451;
         }
 
         .price-card.featured {
-            border: 2px solid #ffd900;
+            border: 2px solid #F6C451;
             position: relative;
             background: #1f1f1f;
         }
 
         .card-header h3 {
             font-size: 1.5rem;
-            color: #ffd900;
+            color: #F6C451;
             margin-bottom: 20px;
         }
 
@@ -605,7 +685,7 @@ html, body {
 
         .features li::before {
             content: "✓";
-            color: #ffd900;
+            color: #F6C451;
             margin-right: 10px;
             font-weight: bold;
         }
@@ -621,9 +701,9 @@ html, body {
         }
 
         .btn-select.gold {
-            background: #ffd900;
+            background: #F6C451;
             color: #000;
-            border-color: #ffd900;
+            border-color: #F6C451;
         }
 
         .btn-select:hover {
@@ -777,7 +857,7 @@ html, body {
 
         .card-overlay h3 {
             font-size: 1.2rem;
-            color: #ffd900;
+            color: #F6C451;
         }
 
 
@@ -786,7 +866,7 @@ html, body {
             top: 50%;
             transform: translateY(-50%);
             background: rgba(0, 0, 0, 0.7);
-            color: #ffd900;
+            color: #F6C451;
             border: none;
             font-size: 2rem;
             padding: 10px 20px;
@@ -797,7 +877,7 @@ html, body {
         }
 
         .nav-btn:hover {
-            background: #ffd900;
+            background: #F6C451;
             color: #000;
         }
 
@@ -1039,7 +1119,7 @@ html, body {
         }
 
         .footer-col a:hover {
-            color: #ffd900;
+            color: #F6C451;
         }
 
 
@@ -1070,7 +1150,11 @@ html, body {
 <body>
 
     <header class="main-header">
-        <div class="logo">Lingunan<span> FitnessGym</span></div>
+        <!-- In Header -->
+<div class="logo-container">
+    <img src="assets/image/logo.png" alt="Lingunan Fitness Gym" class="logo-img">
+    <div class="logo-text">Lingunan<span>FitnessGym</span></div>
+</div>
 
         <nav class="nav-menu" id="navMenu">
             <div class="close-btn" id="closeBtn">&times;</div>
