@@ -1,0 +1,55 @@
+Capstone_1
+│   app
+│   ├── api
+│   └── config
+│       └── connection.php
+│   assets
+│   ├── css
+│   │   ├── admin_header.css
+│   │   ├── admin_sidebar.css
+│   │   ├── admin.css
+│   │   ├── footerComponents.css
+│   │   ├── headerComponent.css
+│   │   ├── landing-page.css
+│   │   ├── login.css
+│   │   └── toastednotif.css
+│   ├── ico
+│   │   ├── dashboard_active.png
+│   │   └── dashboard.png
+│   ├── image
+│   │   ├── gallerybackground.jpg
+│   │   ├── hero-background.jpg
+│   │   ├── location.png
+│   │   ├── Logo.png
+│   │   └── Man.png
+│   └── js
+│       └── landing-page.js
+│   component
+│   ├── admin_header.php
+│   ├── admin_sidebar.php
+│   ├── landingPage-footer.php
+│   └── landingPage-header.php
+│   public
+│   ├── client
+│   │   ├── management
+│   │   │   ├── member.php
+│   │   │   ├── membership.php
+│   │   │   ├── report.php
+│   │   │   ├── visitorLog.php
+│   │   │   └── wallet.php
+│   │   ├── system
+│   │   │   ├── backup.php
+│   │   │   ├── Ecommerce.php
+│   │   │   ├── entryLog.php
+│   │   │   └── RFID.php
+│   │   ├── dashboard.php
+│   │   ├── index.php
+│   │   ├── login.php
+│   │   └── management_member.php
+│   └── member
+│       ├── dashboard.php
+│       ├── index.php
+│       └── login.php
+│   architecture.txt
+│   index.php
+│   test.php
